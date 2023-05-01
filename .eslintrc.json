@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@detra-lab/eslint-config",
+    "@detra-lab/eslint-config/typescript"
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  }
+}
