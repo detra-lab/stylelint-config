@@ -1,0 +1,12 @@
+/index.js
+/sass.js
+/styled.js
+/core/
+/types/
+
+.cache
+.DS_Store
+.env*
+*log
+node_modules
+Thumbs.db

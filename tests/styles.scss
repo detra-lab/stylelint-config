@@ -1,0 +1,49 @@
+$sm: 320px;
+$md: 768px;
+$lg: 1440px;
+
+@mixin mq($canvas) {
+  @if $canvas == sm {
+    @media only screen and (min-width: $sm) {
+      @content;
+    }
+  } @else if $canvas == md {
+    @media only screen and (min-width: $md) {
+      @content;
+    }
+  } @else if $canvas == lg {
+    @media only screen and (min-width: $lg) {
+      @content;
+    }
+  }
+}
+
+header {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  background-color: #eee;
+
+  h1 {
+    color: #444;
+    font-size: 18px;
+  }
+
+  @include mq(lg) {
+    height: 300px;
+    line-height: 300px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+/* The BEM pattern is valid (https://github.com/getbem) */
+.block__element--modifier {
+  &__element {
+    &--modifier {
+      content: ''; // Inline comment
+    }
+  }
+}
