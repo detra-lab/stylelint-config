@@ -1,5 +1,9 @@
 # Stylelint Config
 
+[![NPM Version][npm_version_badge]][npm_badge_url]
+[![NPM Downloads][npm_downloads_badge]][npm_badge_url]
+[![CI Status][ci_badge]][npm_badge_url]
+
 Modular and opinionated [Stylelint](https://stylelint.io) configuration with support for CSS or PostCSS syntax, SASS language, and some CSS in JS solutions, like [Styled Components](https://github.com/styled-components/styled-components) or [Emotion.js](https://github.com/emotion-js/emotion) template literals.
 
 - [Stylelint Config](#stylelint-config)
@@ -21,14 +25,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 1. Install the config:
 
    ```sh
-   # NPM
    npm add --save-dev @detra-lab/stylelint-config stylelint
-
-   # PNPM
-   pnpm add --save-dev @detra-lab/stylelint-config stylelint
-
-   # Yarn
-   yarn add --dev @detra-lab/stylelint-config stylelint
    ```
 
 2. Create a `.stylelintrc.json` file in the root of your project, and extend the following configuration from it:
@@ -64,14 +61,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 1. Install the config:
 
    ```sh
-   # NPM
    npm add --save-dev @detra-lab/stylelint-config stylelint stylelint-scss postcss-scss
-
-   # PNPM
-   pnpm add --save-dev @detra-lab/stylelint-config stylelint stylelint-scss postcss-scss
-
-   # Yarn
-   yarn add --dev @detra-lab/stylelint-config stylelint stylelint-scss postcss-scss
    ```
 
 2. Create a `.stylelintrc.json` file in the root of your project, and extend the following configuration from it:
@@ -110,14 +100,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 1. Install the config:
 
    ```sh
-   # NPM
    npm add --save-dev @detra-lab/stylelint-config stylelint postcss-styled-syntax
-
-   # PNPM
-   pnpm add --save-dev @detra-lab/stylelint-config stylelint postcss-styled-syntax
-
-   # Yarn
-   yarn add --dev @detra-lab/stylelint-config stylelint postcss-styled-syntax
    ```
 
 2. Create a `.stylelintrc.json` file in the root of your project, and extend the following configuration from it:
@@ -206,3 +189,14 @@ You can extend the configuration and override some rules. Add the `rules` proper
 ## License
 
 [MIT License](./LICENSE)
+
+<!-- Badges -->
+
+[ci_badge]: https://img.shields.io/github/actions/workflow/status/detra-lab/stylelint-config/tests.yml?style=flat-square&colorA=6930C3&colorB=5390D9
+[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/stylelint-config?style=flat-square&colorA=6930C3&colorB=5390D9
+[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/stylelint-config?style=flat-square&colorA=6930C3&colorB=5390D9
+
+<!-- Links -->
+
+[ci_badge_url]: https://github.com/detra-lab/stylelint-config/actions/workflows/tests.yml
+[npm_badge_url]: https://www.npmjs.com/package/@detra-lab/stylelint-config
