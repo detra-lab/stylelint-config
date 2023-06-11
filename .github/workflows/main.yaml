@@ -26,14 +26,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: pnpm
 
-      - name: 'Install Dependencies'
+      - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: 'Linters & Tests'
+      - name: Linters & Tests
         run: |
           pnpm run check
           pnpm run test
 
-      - name: 'Build the artifact'
+      - name: Build the artifact
         run: pnpm run build
