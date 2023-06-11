@@ -25,7 +25,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 1. Install the config:
 
    ```sh
-   npm add --save-dev @detra-lab/stylelint-config stylelint
+   pnpm add -D @detra-lab/stylelint-config stylelint
    ```
 
 2. Create a `.stylelintrc.json` file in the root of your project, and extend the following configuration from it:
@@ -49,7 +49,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 4. Lint your code with Stylelint:
 
    ```sh
-   npm run check:css
+   pnpm run check:css
    ```
 
    </details>
@@ -61,7 +61,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 1. Install the config:
 
    ```sh
-   npm add --save-dev @detra-lab/stylelint-config stylelint stylelint-scss postcss-scss
+   pnpm add -D @detra-lab/stylelint-config stylelint stylelint-scss postcss-scss
    ```
 
 2. Create a `.stylelintrc.json` file in the root of your project, and extend the following configuration from it:
@@ -88,7 +88,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 4. Lint your code with Stylelint:
 
    ```sh
-   npm run check:css
+   pnpm run check:css
    ```
 
    </details>
@@ -100,7 +100,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 1. Install the config:
 
    ```sh
-   npm add --save-dev @detra-lab/stylelint-config stylelint postcss-styled-syntax
+   pnpm add -D @detra-lab/stylelint-config stylelint postcss-styled-syntax
    ```
 
 2. Create a `.stylelintrc.json` file in the root of your project, and extend the following configuration from it:
@@ -127,7 +127,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 4. Lint your code with Stylelint:
 
    ```sh
-   npm run check:css
+   pnpm run check:css
    ```
 
    </details>
@@ -199,4 +199,4 @@ You can extend the configuration and override some rules. Add the `rules` proper
 <!-- Links -->
 
 [ci_badge_url]: https://github.com/detra-lab/stylelint-config/actions/workflows/tests.yml
-[npm_badge_url]: https://www.npmjs.com/package/@detra-lab/stylelint-config
+[npm_badge_url]: https://npmjs.com/package/@detra-lab/stylelint-config

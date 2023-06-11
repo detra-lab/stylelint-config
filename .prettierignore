@@ -1,7 +1,5 @@
-/index.js
-/sass.js
-/styled.js
-/core/
-/types/
+/index.*
+/sass.*
+/styled.*
 
 node_modules
