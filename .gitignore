@@ -1,8 +1,6 @@
-/index.js
-/sass.js
-/styled.js
-/core/
-/types/
+/index.*
+/sass.*
+/styled.*
 
 .cache
 .DS_Store

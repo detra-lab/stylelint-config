@@ -21,7 +21,7 @@ type CssCategory =
 
 type CssCategories = Record<CssCategory, string[]>
 
-const cssCategories: CssCategories = {
+const CSS_CATEGORIES: CssCategories = {
   special: ['composes', '@import', '@extend', '@mixin', '@at-root'],
   positioning: ['position', 'top', 'right', 'bottom', 'left', 'z-index'],
   boxModel: [
@@ -259,13 +259,7 @@ const cssCategories: CssCategories = {
   ]
 }
 
-export = {
-  plugins: ['stylelint-order'],
-
-  rules: {
-    'order/properties-order': createConfig(cssCategories)
-  }
-}
+export const CSS_PROPERTIES_ORDER = createConfig(CSS_CATEGORIES)
 
 // --- Helpers
 type StylelintOrderConfig = Array<Record<'properties', string[]>>
