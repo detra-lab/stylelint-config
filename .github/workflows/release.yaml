@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  workflow_run:
+    workflows:
+      - CI
+    branches:
+      - stable
+    types:
+      - completed
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Obtain the Package Version
+        id: pkg_version
+        run: echo "::set-output name=version::$(node -p "require('./package.json').version")"
+
+      - name: Create Release PR or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm run release
+          title: 'chore: Bump to v${{ steps.pkg_version.outputs.version }}'
+          commit: 'chore: Bump to v${{ steps.pkg_version.outputs.version }}'
+        env:
+          NPM_TOKEN: ${{ secrets.DETRA_NPM_PAT }}
+          GITHUB_TOKEN: ${{ secrets.DETRA_GH_PAT }}
