@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - stable
+  pull_request:
+    branches:
+      - stable
+
+jobs:
+  tests:
+    if: ${{ contains(github.event.pull_request.body, '[[skip-ci]]') == false }}
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16, 18]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Linters & Tests
+        run: |
+          pnpm run check
+          pnpm run test
+
+      - name: Build the artifact
+        run: pnpm run build

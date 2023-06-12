@@ -1,6 +1,6 @@
 import { lowerCase, namePattern } from './namespaces'
 
-const GENERAL = {
+export const GENERAL = {
   /**
    * Descending
    * Ref. https://stylelint.io/user-guide/rules#descending
@@ -100,7 +100,7 @@ const GENERAL = {
   'unit-no-unknown': [true, { ignoreFunctions: ['image-set'] }]
 }
 
-const CONVENTIONS = {
+export const CONVENTIONS = {
   /**
    * Allowed, disallowed & required
    * Ref. https://stylelint.io/user-guide/rules#allowed-disallowed--required
@@ -301,11 +301,4 @@ const CONVENTIONS = {
    * Ref. https://stylelint.io/user-guide/rules#whitespace-inside
    */
   'comment-whitespace-inside': 'always'
-}
-
-export = {
-  rules: {
-    ...GENERAL,
-    ...CONVENTIONS
-  }
 }
