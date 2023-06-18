@@ -42,8 +42,8 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          title: 'chore: Bump the package version'
-          commit: 'chore: Bump the package version'
+          title: 'chore: bump the package version'
+          commit: 'chore: bump the package version'
           publish: pnpm run release
         env:
           NPM_TOKEN: ${{ secrets.DETRA_NPM_PAT }}
