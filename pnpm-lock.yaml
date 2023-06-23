@@ -29,8 +29,8 @@ devDependencies:
     specifier: ^0.1.0
     version: 0.1.0(prettier@2.8.8)
   '@detra-lab/tsc':
-    specifier: ^0.1.0
-    version: 0.1.0(@types/node@16.0.0)(typescript@5.0.2)
+    specifier: ^0.2.0
+    version: 0.2.0(@types/node@16.0.0)(typescript@5.0.2)
   '@evilmartians/lefthook':
     specifier: ^1.4.1
     version: 1.4.1
@@ -535,11 +535,14 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@detra-lab/tsc@0.1.0(@types/node@16.0.0)(typescript@5.0.2):
-    resolution: {integrity: sha512-9KXl3ST3k3zEO9+hs87EJrsOXeU6FC4CDWZktNeZ0kAbUlMXhMh9TE2I/KrXnebLBmLDUBolUOVqvPkuz93ksQ==}
+  /@detra-lab/tsc@0.2.0(@types/node@16.0.0)(typescript@5.0.2):
+    resolution: {integrity: sha512-iPpuhF4ZZ2vfaoBQ6jiyMLZGt2a/CDUem4b89koPR9V/iz+UlbpLgYvlOC5at1cegb60iLOq+Y2aU5cBrGXpng==}
     peerDependencies:
       '@types/node': '>=16'
       typescript: ^4.9 || ^5.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
     dependencies:
       '@types/node': 16.0.0
       typescript: 5.0.2
