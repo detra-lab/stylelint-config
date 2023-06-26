@@ -46,7 +46,7 @@
     "@changesets/cli": "^2.26.1",
     "@detra-lab/eslint-config": "^0.2.0",
     "@detra-lab/prettier-config": "^0.1.0",
-    "@detra-lab/tsc": "^0.1.0",
+    "@detra-lab/tsc": "^0.2.0",
     "@evilmartians/lefthook": "^1.4.1",
     "@types/node": "^16.0.0",
     "eslint": "^8.42.0",
