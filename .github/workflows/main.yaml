@@ -10,7 +10,7 @@ on:
 
 jobs:
   tests:
-    if: ${{ contains(github.event.pull_request.body, '[[skip-ci]]') == false }}
+    if: ${{ !contains(github.event.pull_request.body, '[[skip-ci]]') }}
 
     runs-on: ubuntu-latest
 
