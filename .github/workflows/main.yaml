@@ -7,10 +7,12 @@ on:
   pull_request:
     branches:
       - stable
+    types:
+      - closed
 
 jobs:
   tests:
-    if: ${{ !contains(github.event.pull_request.body, '[[skip-ci]]') }}
+    if: ${{ !contains(github.event.pull_request.body, '[skip-ci]') }}
 
     runs-on: ubuntu-latest
 
@@ -19,22 +21,27 @@ jobs:
         node-version: [16, 18]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v3
+
+      - name: 📦 Setup PNPm
+        uses: pnpm/action-setup@v2
         with:
-          version: 8
-      - uses: actions/setup-node@v3
+          version: latest
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
 
-      - name: Install Dependencies
+      - name: 🧩 Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Linters & Tests
+      - name: 🧪 Linters & Tests
         run: |
           pnpm run check
           pnpm run test
 
-      - name: Build the artifact
+      - name: 🚀 Build the artifact
         run: pnpm run build
