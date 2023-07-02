@@ -1,19 +1,24 @@
 import { defineConfig } from 'tsup'
 
 const ENTRIES = {
-  index: './src/css.ts',
+  css: './src/css.ts',
   sass: './src/sass.ts',
   styled: './src/styled.ts'
 }
 
-export default defineConfig({
-  clean: false,
+type Config = ReturnType<typeof defineConfig>
+
+const config: Config = {
   dts: true,
+  clean: false,
+  outDir: '.',
   entry: ENTRIES,
   format: ['cjs'],
-  outDir: '.',
+  target: 'es2020',
   platform: 'node',
   sourcemap: false,
-  splitting: false,
-  target: 'node16'
-})
+  splitting: false
+}
+
+// eslint-disable-next-line no-restricted-exports
+export default defineConfig(config)

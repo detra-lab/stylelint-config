@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../index', '../sass']
+  extends: ['../css', '../sass']
 }

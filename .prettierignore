@@ -1,5 +1,7 @@
-/index.*
+/css.*
 /sass.*
 /styled.*
 
 node_modules
+pnpm-lock.yaml
+

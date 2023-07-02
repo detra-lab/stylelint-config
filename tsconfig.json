@@ -1,4 +1,4 @@
 {
   "extends": "@detra-lab/tsc/node/tsconfig.cjs.json",
-  "include": ["src", "tsup.config.ts"]
+  "include": ["./src", "./tsup.config.ts"]
 }

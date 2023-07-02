@@ -2,32 +2,27 @@
   "name": "@detra-lab/stylelint-config",
   "version": "0.1.0",
   "description": "Modular and opinionated Stylelint configuration with support for CSS, PostCSS, SASS language, and CSS in JS solutions.",
-  "license": "MIT",
-  "author": {
-    "name": "Detra",
-    "email": "detra.lab@pm.me",
-    "homepage": "https://github.com/detra-lab"
+  "type": "commonjs",
+  "main": "./css.js",
+  "types": "./css.d.ts",
+  "exports": {
+    ".": {
+      "import": "./css.js",
+      "types": "./css.d.ts"
+    },
+    "./sass": {
+      "import": "./sass.js",
+      "types": "./sass.d.ts"
+    },
+    "./styled": {
+      "import": "./styled.js",
+      "types": "./styled.d.ts"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/detra-lab/stylelint-config.git"
-  },
-  "bugs": {
-    "url": "https://github.com/detra-lab/stylelint-config/issues"
-  },
-  "engines": {
-    "node": "16.x || 18.x",
-    "pnpm": ">=8"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "main": "index.js",
-  "types": "index.d.ts",
   "files": [
-    "/index.{js,d.ts}",
-    "/sass.{js,d.ts}",
-    "/styled.{js,d.ts}"
+    "./css.{js,d.ts}",
+    "./sass.{js,d.ts}",
+    "./styled.{js,d.ts}"
   ],
   "prettier": "@detra-lab/prettier-config",
   "scripts": {
@@ -43,20 +38,20 @@
   },
   "devDependencies": {
     "@changesets/changelog-git": "^0.1.14",
-    "@changesets/cli": "^2.26.1",
+    "@changesets/cli": "^2.26.2",
     "@detra-lab/eslint-config": "^0.2.0",
     "@detra-lab/prettier-config": "^0.1.0",
-    "@detra-lab/tsc": "^0.2.0",
-    "@evilmartians/lefthook": "^1.4.1",
-    "@types/node": "^16.0.0",
-    "eslint": "^8.42.0",
+    "@detra-lab/tsc": "^0.2.5",
+    "@evilmartians/lefthook": "^1.4.3",
+    "@types/node": "^16.18.38",
+    "eslint": "^8.44.0",
     "postcss-scss": "^4.0.6",
     "postcss-styled-syntax": "^0.4.0",
     "prettier": "^2.8.8",
-    "stylelint": "^15.7.0",
+    "stylelint": "^15.9.0",
     "stylelint-scss": "^5.0.1",
-    "tsup": "^7.0.0",
-    "typescript": "^5.0.0"
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "postcss-syntax": "0.36.2",
@@ -66,7 +61,7 @@
   "peerDependencies": {
     "postcss-scss": "^4.0.0",
     "postcss-styled-syntax": "^0.4.0",
-    "stylelint": "^15.7.0",
+    "stylelint": "^15.9.0",
     "stylelint-scss": "^5.0.0"
   },
   "peerDependenciesMeta": {
@@ -79,6 +74,26 @@
     "stylelint-scss": {
       "optional": true
     }
+  },
+  "engines": {
+    "node": "16 || 18",
+    "pnpm": ">=8"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Detra",
+    "email": "detra.lab@pm.me",
+    "homepage": "https://github.com/detra-lab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detra-lab/stylelint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/detra-lab/stylelint-config/issues"
   },
   "keywords": [
     "linter",
