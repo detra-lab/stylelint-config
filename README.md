@@ -188,7 +188,7 @@ You can extend the configuration and override some rules. Add the `rules` proper
 
 ## License
 
-[MIT License](./LICENSE)
+[Apache License 2.0](./LICENSE)
 
 <!-- Badges -->
 
