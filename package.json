@@ -2,52 +2,51 @@
   "name": "@detra-lab/stylelint-config",
   "version": "0.1.0",
   "description": "Modular and opinionated Stylelint configuration with support for CSS, PostCSS, SASS language, and CSS in JS solutions.",
-  "type": "commonjs",
-  "main": "./css.js",
-  "types": "./css.d.ts",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./css.js",
-      "types": "./css.d.ts"
+      "import": "./lib/css.js",
+      "require": "./lib/css.cjs",
+      "types": "./lib/css.d.ts"
     },
     "./sass": {
-      "import": "./sass.js",
-      "types": "./sass.d.ts"
+      "import": "./lib/sass.js",
+      "require": "./lib/sass.cjs",
+      "types": "./lib/sass.d.ts"
     },
     "./styled": {
-      "import": "./styled.js",
-      "types": "./styled.d.ts"
+      "import": "./lib/styled.js",
+      "require": "./lib/styled.cjs",
+      "types": "./lib/styled.d.ts"
     }
   },
   "files": [
-    "./css.{js,d.ts}",
-    "./sass.{js,d.ts}",
-    "./styled.{js,d.ts}"
+    "./lib"
   ],
   "prettier": "@detra-lab/prettier-config",
   "scripts": {
     "check:tsc": "tsc --noEmit",
     "check:src": "eslint . --ext .js,.ts --ignore-path .gitignore",
     "check": "pnpm run /^check:.*/",
-    "test:css": "stylelint ./tests/*.css -c ./tests/.stylelintrc.css.js",
-    "test:sass": "stylelint ./tests/*.scss -c ./tests/.stylelintrc.sass.js",
-    "test:styled": "stylelint ./tests/*.{ts,js} -c ./tests/.stylelintrc.styled.js",
+    "test:css": "stylelint ./tests/*.css -c ./tests/.stylelintrc.css.json",
+    "test:sass": "stylelint ./tests/*.scss -c ./tests/.stylelintrc.sass.json",
+    "test:styled": "stylelint ./tests/*.{ts,js} -c ./tests/.stylelintrc.styled.json",
     "test": "pnpm run build && pnpm run /^test:.*/",
     "build": "tsup-node",
     "release": "pnpm run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@detra-lab/eslint-config": "^0.2.0",
-    "@detra-lab/prettier-config": "^0.1.0",
+    "@detra-lab/eslint-config": "^1.0.2",
+    "@detra-lab/prettier-config": "^0.2.0",
     "@detra-lab/tsc": "^0.2.5",
-    "@evilmartians/lefthook": "^1.4.3",
+    "@evilmartians/lefthook": "^1.4.5",
     "@types/node": "^16.18.38",
-    "eslint": "^8.44.0",
+    "eslint": "^8.45.0",
     "postcss-scss": "^4.0.6",
     "postcss-styled-syntax": "^0.4.0",
-    "prettier": "^2.8.8",
-    "stylelint": "^15.9.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^15.10.1",
     "stylelint-scss": "^5.0.1",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
@@ -60,7 +59,7 @@
   "peerDependencies": {
     "postcss-scss": "^4.0.0",
     "postcss-styled-syntax": "^0.4.0",
-    "stylelint": "^15.9.0",
+    "stylelint": "^15.10.0",
     "stylelint-scss": "^5.0.0"
   },
   "peerDependenciesMeta": {

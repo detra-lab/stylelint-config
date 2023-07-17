@@ -1,0 +1,3 @@
+{
+  "extends": ["../lib/css.cjs", "../lib/sass.cjs"]
+}

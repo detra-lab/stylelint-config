@@ -1,6 +1,4 @@
-/css.*
-/sass.*
-/styled.*
+/lib
 
 .cache
 .DS_Store

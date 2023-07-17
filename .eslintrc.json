@@ -4,6 +4,6 @@
     "@detra-lab/eslint-config/typescript"
   ],
   "parserOptions": {
-    "project": ["./tsconfig.json"]
+    "project": true
   }
 }

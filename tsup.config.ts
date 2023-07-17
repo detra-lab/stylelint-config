@@ -6,14 +6,14 @@ const ENTRIES = {
   styled: './src/styled.ts'
 }
 
-type Config = ReturnType<typeof defineConfig>
+const OUT_DIR = './lib'
 
 const config: Config = {
   dts: true,
   clean: false,
-  outDir: '.',
+  outDir: OUT_DIR,
   entry: ENTRIES,
-  format: ['cjs'],
+  format: ['cjs', 'esm'],
   target: 'es2020',
   platform: 'node',
   sourcemap: false,
@@ -22,3 +22,6 @@ const config: Config = {
 
 // eslint-disable-next-line no-restricted-exports
 export default defineConfig(config)
+
+// --- Types
+type Config = ReturnType<typeof defineConfig>
