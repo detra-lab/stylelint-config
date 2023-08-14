@@ -1,14 +1,12 @@
-name: CI
+name: Test
 
 on:
   pull_request:
     branches:
       - stable
-    types:
-      - closed
 
 jobs:
-  tests:
+  test:
     if: ${{ !contains(github.event.pull_request.body, '[skip-ci]') }}
 
     runs-on: ubuntu-latest
@@ -40,5 +38,5 @@ jobs:
           pnpm run check
           pnpm run test
 
-      - name: 🚀 Build the artifact
+      - name: 🔥 Build the artifact
         run: pnpm run build
