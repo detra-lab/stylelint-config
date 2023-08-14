@@ -11,7 +11,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
   - [CSS Properties Order](#css-properties-order)
   - [Extending the Configuration](#extending-the-configuration)
   - [Integrating Stylelint into the IDEs/Editors](#integrating-stylelint-into-the-ideseditors)
-  - [Thanks](#thanks)
+  - [Acknowledgments](#acknowledgments)
   - [License](#license)
 
 > The following Stylelint configurations do not include code formatting rules, which are therefore delegated to [Prettier](https://prettier.io/). Please, use the [`@detra-lab/prettier`](https://github.com/detra-lab/prettier-config) to handle this type of need.
@@ -180,7 +180,9 @@ You can extend the configuration and override some rules. Add the `rules` proper
 3. (Optional) Highlight the CSS-in-JS syntax with the [Styled Components Plugin](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
 </details>
 
-## Thanks
+## Acknowledgments
+
+Thanks to the following projects for their contributions:
 
 - [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties)
 - [stylelint-order](https://github.com/hudochenkov/stylelint-order)
