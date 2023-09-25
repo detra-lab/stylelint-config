@@ -194,9 +194,9 @@ Thanks to the following projects for their contributions:
 
 <!-- Badges -->
 
-[ci_badge]: https://img.shields.io/github/actions/workflow/status/detra-lab/stylelint-config/test.yaml?style=flat-square&colorA=6930C3&colorB=5390D9
-[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/stylelint-config?style=flat-square&colorA=6930C3&colorB=5390D9
-[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/stylelint-config?style=flat-square&colorA=6930C3&colorB=5390D9
+[ci_badge]: https://img.shields.io/github/actions/workflow/status/detra-lab/stylelint-config/test.yaml?style=flat-square&colorA=383AB5&colorB=5390D9
+[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/stylelint-config?style=flat-square&colorA=383AB5&colorB=5390D9
+[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/stylelint-config?style=flat-square&colorA=383AB5&colorB=5390D9
 
 <!-- Links -->
 
