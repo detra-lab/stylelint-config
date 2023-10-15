@@ -1,6 +1,5 @@
+*.md
 /lib
-/README.md
-/changeset/*.md
 
 node_modules
 pnpm-lock.yaml

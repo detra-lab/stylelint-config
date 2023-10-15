@@ -11,6 +11,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
   - [CSS Properties Order](#css-properties-order)
   - [Extending the Configuration](#extending-the-configuration)
   - [Integrating Stylelint into the IDEs/Editors](#integrating-stylelint-into-the-ideseditors)
+  - [Contributing](#contributing)
   - [Acknowledgments](#acknowledgments)
   - [License](#license)
 
@@ -19,7 +20,6 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 ## Available Configurations
 
 <details>
-
 <summary><strong>CSS/PostCSS Syntax</strong></summary>
 
 1. Install the config:
@@ -51,11 +51,9 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
    ```sh
    pnpm run check:css
    ```
-
-   </details>
+</details>
 
 <details>
-
 <summary><strong>SCSS Syntax</strong></summary>
 
 1. Install the config:
@@ -90,11 +88,9 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
    ```sh
    pnpm run check:css
    ```
-
-   </details>
+</details>
 
 <details>
-
 <summary><strong>CSS in JS (Template Literals)</strong></summary>
 
 1. Install the config:
@@ -129,8 +125,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
    ```sh
    pnpm run check:css
    ```
-
-   </details>
+</details>
 
 ## CSS Properties Order
 
@@ -161,7 +156,6 @@ You can extend the configuration and override some rules. Add the `rules` proper
 ## Integrating Stylelint into the IDEs/Editors
 
 <details>
-
 <summary><strong>Visual Studio Code</strong></summary>
 
 1. Install the [Stylelint Plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
@@ -180,6 +174,10 @@ You can extend the configuration and override some rules. Add the `rules` proper
 3. (Optional) Highlight the CSS-in-JS syntax with the [Styled Components Plugin](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
 </details>
 
+## Contributing
+
+Read our [contributing guide](https://github.com/detra-lab/stylelint-config/blob/stable/CONTRIBUTING.md) to learn about our development process, how to propose bug fixes and improvements, and how to build and test your changes.
+
 ## Acknowledgments
 
 Thanks to the following projects for their contributions:
@@ -190,15 +188,15 @@ Thanks to the following projects for their contributions:
 
 ## License
 
-[Apache License 2.0](./LICENSE)
+[Apache License 2.0](https://github.com/detra-lab/stylelint-config/blob/stable/LICENSE)
+
+<div align="center"><img src="https://raw.github.com/detra-lab/.github/stable/profile/logo.svg" width="100" height="100" alt="Detra" /><p><small>© 2023 Detra</small></p></div>
 
 <!-- Badges -->
-
 [ci_badge]: https://img.shields.io/github/actions/workflow/status/detra-lab/stylelint-config/test.yaml?style=flat-square&colorA=424394&colorB=80ffdb
 [npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/stylelint-config?style=flat-square&colorA=424394&colorB=80ffdb
 [npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/stylelint-config?style=flat-square&colorA=424394&colorB=80ffdb
 
 <!-- Links -->
-
 [ci_badge_url]: https://github.com/detra-lab/stylelint-config/actions/workflows/test.yaml
 [npm_badge_url]: https://npmjs.com/package/@detra-lab/stylelint-config
