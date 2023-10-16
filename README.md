@@ -11,6 +11,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
   - [CSS Properties Order](#css-properties-order)
   - [Extending the Configuration](#extending-the-configuration)
   - [Integrating Stylelint into the IDEs/Editors](#integrating-stylelint-into-the-ideseditors)
+  - [Code of Conduct](#code-of-conduct)
   - [Contributing](#contributing)
   - [Acknowledgments](#acknowledgments)
   - [License](#license)
@@ -173,6 +174,10 @@ You can extend the configuration and override some rules. Add the `rules` proper
 
 3. (Optional) Highlight the CSS-in-JS syntax with the [Styled Components Plugin](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
 </details>
+
+## Code of Conduct
+
+Help us keep the project open and inclusive. Please read and follow our [Code of Conduct](https://github.com/detra-lab/stylelint-config/blob/stable/CODE_OF_CONDUCT.md).
 
 ## Contributing
 
