@@ -7,10 +7,10 @@
 Modular and opinionated [Stylelint](https://stylelint.io) configuration with support for CSS or PostCSS syntax, SASS language, and some CSS in JS solutions, like [Styled Components](https://github.com/styled-components/styled-components) or [Emotion.js](https://github.com/emotion-js/emotion) template literals.
 
 - [Stylelint Config](#stylelint-config)
-  - [Available Configurations](#available-configurations)
-  - [CSS Properties Order](#css-properties-order)
-  - [Extending the Configuration](#extending-the-configuration)
-  - [Integrating Stylelint into the IDEs/Editors](#integrating-stylelint-into-the-ideseditors)
+  - [Available configurations](#available-configurations)
+  - [CSS properties order](#css-properties-order)
+  - [Extending the configuration](#extending-the-configuration)
+  - [Integration with IDEs/editors](#integration-with-ideseditors)
   - [Code of Conduct](#code-of-conduct)
   - [Contributing](#contributing)
   - [Acknowledgments](#acknowledgments)
@@ -18,7 +18,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
 
 > The following Stylelint configurations do not include code formatting rules, which are therefore delegated to [Prettier](https://prettier.io/). Please, use the [`@detra-lab/prettier`](https://github.com/detra-lab/prettier-config) to handle this type of need.
 
-## Available Configurations
+## Available configurations
 
 <details>
 <summary><strong>CSS/PostCSS Syntax</strong></summary>
@@ -128,7 +128,7 @@ Modular and opinionated [Stylelint](https://stylelint.io) configuration with sup
    ```
 </details>
 
-## CSS Properties Order
+## CSS properties order
 
 Stylelint Config sorts the CSS property declarations by grouping them in the following order:
 
@@ -139,7 +139,7 @@ Stylelint Config sorts the CSS property declarations by grouping them in the fol
 5. Animation
 6. Misc
 
-## Extending the Configuration
+## Extending the configuration
 
 You can extend the configuration and override some rules. Add the `rules` property inside the `.stylelintrc.json` file and then choose what to turn on or off.
 
@@ -154,7 +154,7 @@ You can extend the configuration and override some rules. Add the `rules` proper
 }
 ```
 
-## Integrating Stylelint into the IDEs/Editors
+## Integration with IDEs/editors
 
 <details>
 <summary><strong>Visual Studio Code</strong></summary>
