@@ -195,12 +195,12 @@ Thanks to the following projects for their contributions:
 
 [Apache License 2.0](https://github.com/detra-lab/stylelint-config/blob/stable/LICENSE)
 
-<div align="center"><img src="https://raw.github.com/detra-lab/.github/stable/profile/logo.svg" width="100" height="100" alt="Detra" /><p><small>© 2023 Detra</small></p></div>
+<div align="center"><img src="https://raw.github.com/detra-lab/.github/stable/profile/logo.svg" width="120" height="120" alt="Detra Logo" /><p><small>Human-Made by Detra.</small><br/><small>© 2023</small></p></div>
 
 <!-- Badges -->
-[ci_badge]: https://img.shields.io/github/actions/workflow/status/detra-lab/stylelint-config/test.yaml?style=flat-square&colorA=424394&colorB=80ffdb
-[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/stylelint-config?style=flat-square&colorA=424394&colorB=80ffdb
-[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/stylelint-config?style=flat-square&colorA=424394&colorB=80ffdb
+[ci_badge]: https://img.shields.io/github/actions/workflow/status/detra-lab/stylelint-config/test.yaml?style=flat-square&colorA=5d4fe1&colorB=9bf2dc
+[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/stylelint-config?style=flat-square&colorA=5d4fe1&colorB=9bf2dc
+[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/stylelint-config?style=flat-square&colorA=5d4fe1&colorB=9bf2dc
 
 <!-- Links -->
 [ci_badge_url]: https://github.com/detra-lab/stylelint-config/actions/workflows/test.yaml
