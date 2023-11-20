@@ -33,6 +33,7 @@
     "test:styled": "stylelint ./tests/*.{ts,js} -c ./tests/.stylelintrc.styled.json",
     "test": "pnpm run build && pnpm run /^test:.*/",
     "build": "tsup-node",
+    "changeset": "changeset",
     "release": "pnpm run build && changeset publish"
   },
   "devDependencies": {
