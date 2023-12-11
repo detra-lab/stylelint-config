@@ -4,4 +4,4 @@
 
 **Breaking Changes**
 
-This release introduces a significant breaking change as we have bumped `stylelint` to `v16` and we have added the support for `node.js v20 LTS` and deprecated the `v16`.
+In this release, we have added support for Stylelint version 16. We have also dropped support for Node v16, in line with Stylelint.
