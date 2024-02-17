@@ -167,7 +167,7 @@ You can extend the configuration and override some rules. Add the `rules` proper
    "css.validate": false,
    "scss.validate": false,
    "editor.codeActionsOnSave": {
-     "source.fixAll.stylelint": true
+     "source.fixAll.stylelint": "explicit"
    },
    "stylelint.validate": ["css"] // Add the type of file you want to validate (e.g. ["css", "scss", "typescript", "typescriptreact"])
    ```
