@@ -2,6 +2,6 @@
 "@detra-lab/stylelint-config": minor
 ---
 
-We have made changes to our Stylelint SCSS configuration.
+### Removed Stylelint Rules
 
-In particular, we have replaced the deprecated `scss/at-import-no-partial-leading-underscore` rule with `scss/load-no-partial-leading-underscore`.
+- [SCSS Config] Removed the deprecated `scss/at-import-no-partial-leading-underscore` rule. It has been replaced by the `scss/load-no-partial-leading-underscore` rule [(more details)](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-import-no-partial-leading-underscore/README.md).
