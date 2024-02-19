@@ -1,6 +1,6 @@
 {
   "name": "@detra-lab/stylelint-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Modular and opinionated Stylelint configuration with support for CSS, PostCSS, SASS language, and CSS in JS solutions.",
   "type": "module",
   "exports": {
